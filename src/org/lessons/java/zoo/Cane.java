@@ -1,6 +1,6 @@
 package org.lessons.java.zoo;
 
-class Cane extends Animale {
+class Cane extends Animale implements INuotante {
     @Override
     public void verso() {
         System.out.println("Bau!");
@@ -9,5 +9,10 @@ class Cane extends Animale {
     @Override
     public void mangia() {
         System.out.println("Il cane mangia carne.");
+    }
+
+    @Override
+    public void nuota() {
+        System.out.println("Sto nuotando!!!");
     }
 }
